@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/remApp/static/css/main.69451a2a.css",
+    "main.js": "/remApp/static/js/main.22b2269e.js",
+    "index.html": "/remApp/index.html",
+    "main.69451a2a.css.map": "/remApp/static/css/main.69451a2a.css.map",
+    "main.22b2269e.js.map": "/remApp/static/js/main.22b2269e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69451a2a.css",
+    "static/js/main.22b2269e.js"
+  ]
+}
