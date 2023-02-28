@@ -1,0 +1,67 @@
+{
+  "info": [
+    {
+      "product": "Wódka",
+      "name": "Żołądkowa Miętowa",
+      "unit": "butelka 1 L",
+      "unitNumber": "3",
+      "unitPrice": "31",
+      "sum": "93.00",
+      "id": 1
+    },
+    {
+      "product": "Tequila",
+      "name": "Holba",
+      "unit": "butelka 0.25 L",
+      "unitNumber": "11",
+      "unitPrice": "5",
+      "sum": "55.00",
+      "id": 2
+    },
+    {
+      "product": "Wódka",
+      "name": "Żołądkowa Gorzka",
+      "unit": "butelka 0.25 L",
+      "unitNumber": "3",
+      "unitPrice": "23.43",
+      "sum": "70.29",
+      "id": 4
+    },
+    {
+      "product": "Piwo",
+      "name": "Litovel Citron",
+      "unit": "butelka 0.5 L",
+      "unitNumber": "34",
+      "unitPrice": "2.96",
+      "sum": "100.64",
+      "id": 5
+    },
+    {
+      "product": "Przekąska",
+      "name": "Orzeszki ziemne",
+      "unit": "opakowanie",
+      "unitNumber": "27",
+      "unitPrice": "1.25",
+      "sum": "33.75",
+      "id": 7
+    },
+    {
+      "product": "Likier",
+      "name": "Zubr",
+      "unit": "puszka 0.33 L",
+      "unitNumber": "16",
+      "unitPrice": "15",
+      "sum": "240.00",
+      "id": 8
+    },
+    {
+      "product": "Wódka",
+      "name": "Żołądkowa Gorzka",
+      "unit": "butelka 0.7 L",
+      "unitNumber": "5",
+      "unitPrice": "35.98",
+      "sum": "179.90",
+      "id": 9
+    }
+  ]
+}

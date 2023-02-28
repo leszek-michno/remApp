@@ -1,29 +1,32 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color:darkgray;
+  /* background-color:darkgray; */
   margin-left: 50px;
 }
 
-input {
-  margin: 0 5px 0 5px;
-  font-size: 10px;
+input, select {
+  margin:5px;
+  font-size: 14px;
   padding: 5px;
-  border-radius: 5px;
+  width: 150px;
   }
+
 button {
-  background-color: darkslategray;; 
-  color: whitesmoke;
-  margin: 0 5px 0 5px;
+  background-color: gray; 
+  border: none;
+  color: white;
+  margin: 1px 5px;
   padding: 5px;
-  font-size: 12px;
-  border-radius: 5px;
+  font-size: 14px;
+  
  }
 button:hover {
-  background-color: darkred;
+  background-color: black;
+  transform: scale(1.2);
 }
 
  .product {
-   font-weight: bolder;
+   /* font-weight: bolder; */
    font-size: 14px;
    display: inline-block;
    width: 200px;
@@ -31,12 +34,22 @@ button:hover {
  span {
    display: inline-block;
    width: 100px;
-   font-size: 12px;
+   font-size: 14px;
  }
-input[type=text]:hover{
-  background-color: lightblue;
-}
-input[type=number]:hover{
-  background-color: lightblue;
-}
+select,input:hover{
+  /* background-color: gray;
+  color: white; */
+  cursor: pointer;
   
+}
+/* select,input[type=number]:hover{
+  /* background-color: gray;
+  color: white; */
+  /* cursor: pointer;  */
+  
+
+  
+/* } */
+hr {
+  margin: 5px;
+}  
