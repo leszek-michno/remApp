@@ -1,0 +1,31 @@
+{
+  "info": [
+    {
+      "product": "Wódka",
+      "name": "Litovel Premium",
+      "unit": "butelka 0.5 L",
+      "unitNumber": "1",
+      "unitPrice": "2",
+      "sum": "2.00",
+      "id": 1
+    },
+    {
+      "product": "Whisky",
+      "name": "Zubr",
+      "unit": "butelka 0.5 L",
+      "unitNumber": "2",
+      "unitPrice": "2",
+      "sum": "4.00",
+      "id": 2
+    },
+    {
+      "product": "Brandy",
+      "name": "Jim Beam",
+      "unit": "butelka 0.7 L",
+      "unitNumber": "1",
+      "unitPrice": "55",
+      "sum": "55.00",
+      "id": 3
+    }
+  ]
+}

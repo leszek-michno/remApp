@@ -1,0 +1,71 @@
+@mixin info {
+  margin: 5px;
+  font-size: 14px;
+  padding: 5px;
+  width: 180px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1,
+h2 {
+  margin: 5px 0;
+}
+
+form {
+  .label {
+    margin: 0 auto;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  label {
+    input {
+      @include info;
+    }
+    select {
+      @include info;
+      font-size: 14px;
+      width: 200px;
+    }
+  }
+}
+
+button {
+  background-color: gray;
+  border: none;
+  color: white;
+  margin: 1px 5px;
+  padding: 5px;
+  font-size: 14px;
+  &:hover {
+    background-color: black;
+    transform: scale(1.2);
+  }
+}  
+  div {
+    span {    
+      display: inline-block;
+      text-align: left;
+      width: 120px;
+      font-size: 14px;
+    }
+  }
+
+// option[type=number]:hover{
+//   background-color: gray;
+//   color: white;
+// cursor: pointer;
+// }
+hr {
+  margin: 5px;
+}

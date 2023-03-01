@@ -9,6 +9,7 @@ const ListItems = (props) => {
   return (
     <div>
       <h2>Lista pozycji</h2>
+     <hr/> 
       {items}
       <hr />
     </div>

@@ -19,7 +19,7 @@ const AddItem = (props) => {
   const priceUnit = (e) => setUnitPrice(e.target.value);
 
   useEffect(() => {
-    const newSum = (unitNumber * unitPrice * 1).toFixed(2);
+    const newSum = (unitNumber * unitPrice).toFixed(2);
     setSum(newSum);
   }, [unitNumber, unitPrice]);
 
@@ -30,6 +30,7 @@ const AddItem = (props) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (sum > 0 && unitNumber > 0 && unitPrice > 0) {
     try {
       const res = await axios.post(url, {
         product,
@@ -46,14 +47,18 @@ const AddItem = (props) => {
       setUnitNumber("");
       setUnitPrice("");
       setSum("");
-    } catch (error) {}
+    } catch (error) { 
+    }
+  } else {
+    alert("brak danych do dodania")
   } 
+}
 
   return (
     <div>
       <h2>Dodaj pozycję</h2>
       <form onSubmit={handleSubmit}>
-        <label>
+        <label className="label">
           Produkt:
           <select value={product} onChange={productName}>
             {productType.map((option) => (
@@ -63,7 +68,7 @@ const AddItem = (props) => {
             ))}
           </select>
         </label>
-        <label>
+        <label className="label">
           Nazwa:
           <select value={name} onChange={detailName}>
             {products.map((option) => (
@@ -73,8 +78,7 @@ const AddItem = (props) => {
             ))}
           </select>
         </label>
-
-        <label>
+        <label className="label">
           Jednostka:
           <select value={unit} onChange={unitName}>
             {packages.map((option) => (
@@ -84,19 +88,22 @@ const AddItem = (props) => {
             ))}
           </select>
         </label>
-
+        <label>      
         <input
           type="number"
           placeholder="ilość jednostek"
           value={unitNumber}
           onChange={numberUnit}
         />
+        </label>
+        <label>
         <input
           type="number"
           placeholder="cena jednostkowa netto"
           value={unitPrice}
           onChange={priceUnit}
         />
+        </label>
         <span>kwota: {sum} </span>
         <button onClick={handleClick}>Dodaj</button>
       </form>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AddItem from "./addItem";
 import ListItems from "./listItems";
-import "./App.css";
+import "./App.scss";
 import Header from "./header";
 import axios from "axios";
 
@@ -16,7 +16,6 @@ const App = () => {
     const fetchData = async () => {
       try {
         const res = await axios(url);
-        console.log(res.data);
         setPositions(res.data);
       } catch (error) {
         console.log(error.res);
@@ -47,9 +46,10 @@ const App = () => {
       };
       setCounter(counter + 1);
       setPositions([...positions, item]);
-    } else {
-      alert("Źle wpowadzone dane. Spróbuj ponownie.");
-    }
+    } 
+    // else {
+    //   console.log("brak danych");
+    // }
   };
 
   const handleFullCalculation = () => {
