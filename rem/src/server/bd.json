@@ -26,6 +26,60 @@
       "unitPrice": "55",
       "sum": "55.00",
       "id": 3
+    },
+    {
+      "product": "Piwo",
+      "name": "Desperados",
+      "unit": "butelka 0.4 L",
+      "unitNumber": "14",
+      "unitPrice": "4.49",
+      "sum": "62.86",
+      "id": 4
+    },
+    {
+      "product": "Gin",
+      "name": "Seagrams",
+      "unit": "butelka 0.7 L",
+      "unitNumber": "3",
+      "unitPrice": "43.98",
+      "sum": "131.94",
+      "id": 5
+    },
+    {
+      "product": "",
+      "name": "Bombay",
+      "unit": "butelka 0.7 L",
+      "unitNumber": "2",
+      "unitPrice": "98",
+      "sum": "196.00",
+      "id": 6
+    },
+    {
+      "product": "Rum",
+      "name": "Capitan Morgan Dark",
+      "unit": "butelka 1 L",
+      "unitNumber": "2.3",
+      "unitPrice": "87",
+      "sum": "200.10",
+      "id": 7
+    },
+    {
+      "product": "",
+      "name": "Capitan Morgan Spiced",
+      "unit": "butelka 0.7 L",
+      "unitNumber": "3",
+      "unitPrice": "65",
+      "sum": "195.00",
+      "id": 8
+    },
+    {
+      "product": "",
+      "name": "Havana Club",
+      "unit": "butelka 0.7 L",
+      "unitNumber": "2",
+      "unitPrice": "67",
+      "sum": "134.00",
+      "id": 9
     }
   ]
 }
