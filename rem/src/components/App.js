@@ -5,7 +5,7 @@ import "./App.scss";
 import Header from "./header";
 import axios from "axios";
 
-const url = "http://localhost:4000/info";
+// const url = "server/bd.json";
 
 const App = () => {
   const [sumTotal, setSumTotal] = useState(0);
@@ -15,7 +15,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios(url);
+        const res = await axios("data/bd.json/position");
         setPositions(res.data);
       } catch (error) {
         console.log(error.res);
@@ -26,7 +26,7 @@ const App = () => {
   
   const deleteItem = async (id) => {
     try {
-      await axios.delete(`http://localhost:4000/info/${id}`);
+      await axios.delete(`data/bd.json/info/${id}`);
       setPositions(positions.filter((item) => item.id !== id));
     } catch (error) {
       console.log(error);

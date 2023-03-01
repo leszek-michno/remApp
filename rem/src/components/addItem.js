@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { productType, packages, products } from "./arrays";
 import axios from "axios";
 
-const url = "http://localhost:4000/info";
+// const url = "server/bd.json/info";
 
 const AddItem = (props) => {
   const [name, setName] = useState(products[0]);
@@ -32,7 +32,7 @@ const AddItem = (props) => {
     e.preventDefault();
     if (sum > 0 && unitNumber > 0 && unitPrice > 0) {
     try {
-      const res = await axios.post(url, {
+      const res = await axios.post("data/bd.json/info", {
         product,
         name,
         unit,
