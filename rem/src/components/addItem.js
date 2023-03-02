@@ -60,7 +60,7 @@ const AddItem = (props) => {
       <form onSubmit={handleSubmit}>
         <label className="label">
           Produkt:
-          <select value={product} onChange={productName}>
+          <select  className="'product" value={product} onChange={productName}>
             {productType.map((option) => (
               <option key={option} value={option}>
                 {option}

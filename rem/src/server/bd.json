@@ -2,84 +2,57 @@
   "info": [
     {
       "product": "Wódka",
-      "name": "Litovel Premium",
+      "name": "Wyborowa",
       "unit": "butelka 0.5 L",
-      "unitNumber": "1",
-      "unitPrice": "2",
-      "sum": "2.00",
+      "unitNumber": "12",
+      "unitPrice": "21.99",
+      "sum": "263.88",
       "id": 1
     },
     {
-      "product": "Whisky",
-      "name": "Zubr",
+      "product": "",
+      "name": "Soplica Śliwkowa",
       "unit": "butelka 0.5 L",
-      "unitNumber": "2",
-      "unitPrice": "2",
-      "sum": "4.00",
+      "unitNumber": "7",
+      "unitPrice": "21.25",
+      "sum": "148.75",
       "id": 2
     },
     {
-      "product": "Brandy",
-      "name": "Jim Beam",
-      "unit": "butelka 0.7 L",
-      "unitNumber": "1",
-      "unitPrice": "55",
-      "sum": "55.00",
+      "product": "",
+      "name": "Soplica Kawowa",
+      "unit": "butelka 0.5 L",
+      "unitNumber": "4",
+      "unitPrice": "21.25",
+      "sum": "85.00",
       "id": 3
     },
     {
-      "product": "Piwo",
-      "name": "Desperados",
-      "unit": "butelka 0.4 L",
-      "unitNumber": "14",
-      "unitPrice": "4.49",
-      "sum": "62.86",
+      "product": "",
+      "name": "Soplica Pigwowa",
+      "unit": "butelka 0.5 L",
+      "unitNumber": "12",
+      "unitPrice": "21.25",
+      "sum": "255.00",
       "id": 4
     },
     {
-      "product": "Gin",
-      "name": "Seagrams",
-      "unit": "butelka 0.7 L",
-      "unitNumber": "3",
-      "unitPrice": "43.98",
-      "sum": "131.94",
+      "product": "Piwo",
+      "name": "Holba",
+      "unit": "kega 30 L",
+      "unitNumber": "3.4",
+      "unitPrice": "175",
+      "sum": "595.00",
       "id": 5
     },
     {
-      "product": "",
-      "name": "Bombay",
-      "unit": "butelka 0.7 L",
-      "unitNumber": "2",
-      "unitPrice": "98",
-      "sum": "196.00",
+      "product": "Piwo",
+      "name": "Zubr",
+      "unit": "kega 30 L",
+      "unitNumber": "1",
+      "unitPrice": "175",
+      "sum": "175.00",
       "id": 6
-    },
-    {
-      "product": "Rum",
-      "name": "Capitan Morgan Dark",
-      "unit": "butelka 1 L",
-      "unitNumber": "2.3",
-      "unitPrice": "87",
-      "sum": "200.10",
-      "id": 7
-    },
-    {
-      "product": "",
-      "name": "Capitan Morgan Spiced",
-      "unit": "butelka 0.7 L",
-      "unitNumber": "3",
-      "unitPrice": "65",
-      "sum": "195.00",
-      "id": 8
-    },
-    {
-      "product": "",
-      "name": "Havana Club",
-      "unit": "butelka 0.7 L",
-      "unitNumber": "2",
-      "unitPrice": "67",
-      "sum": "134.00",
-      "id": 9
     }
   ]
 }
