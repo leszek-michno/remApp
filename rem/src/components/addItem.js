@@ -7,16 +7,10 @@ const url = "http://localhost:4000/info";
 const AddItem = (props) => {
   const [name, setName] = useState(products[0]);
   const [unit, setUnit] = useState(packages[0]);
+  const [product, setProduct] = useState(productType[0]);
   const [unitNumber, setUnitNumber] = useState("");
   const [unitPrice, setUnitPrice] = useState("");
   const [sum, setSum] = useState("");
-  const [product, setProduct] = useState(productType[0]);
-
-  const productName = (e) => setProduct(e.target.value);
-  const detailName = (e) => setName(e.target.value);
-  const unitName = (e) => setUnit(e.target.value);
-  const numberUnit = (e) => setUnitNumber(e.target.value);
-  const priceUnit = (e) => setUnitPrice(e.target.value);
 
   useEffect(() => {
     const newSum = (unitNumber * unitPrice).toFixed(2);
@@ -24,8 +18,7 @@ const AddItem = (props) => {
   }, [unitNumber, unitPrice]);
 
   const handleClick = () => {
-    props.add(product, name, unit, unitNumber, unitPrice, sum);
-  
+    props.add(product, name, unit, unitNumber, unitPrice, sum); 
   };
 
   const handleSubmit = async (e) => {
@@ -41,7 +34,6 @@ const AddItem = (props) => {
         sum,
       });
       console.log(res.data);
-      setProduct("");
       setName("");
       setUnit("");
       setUnitNumber("");
@@ -50,17 +42,16 @@ const AddItem = (props) => {
     } catch (error) { 
     }
   } else {
-    alert("brak danych do dodania")
+    alert("Brak danych do dodania")
   } 
 }
-
   return (
     <div>
       <h2>Dodaj pozycję</h2>
       <form onSubmit={handleSubmit}>
         <label className="label">
           Produkt:
-          <select  className="'product" value={product} onChange={productName}>
+          <select value={product} onChange={(e) => setProduct(e.target.value)}>
             {productType.map((option) => (
               <option key={option} value={option}>
                 {option}
@@ -70,7 +61,7 @@ const AddItem = (props) => {
         </label>
         <label className="label">
           Nazwa:
-          <select value={name} onChange={detailName}>
+          <select value={name} onChange={(e) => setName(e.target.value)}>
             {products.map((option) => (
               <option key={option} value={option}>
                 {option}
@@ -80,7 +71,7 @@ const AddItem = (props) => {
         </label>
         <label className="label">
           Jednostka:
-          <select value={unit} onChange={unitName}>
+          <select value={unit} onChange={(e) => setUnit(e.target.value)}>
             {packages.map((option) => (
               <option key={option} value={option}>
                 {option}
@@ -93,7 +84,7 @@ const AddItem = (props) => {
           type="number"
           placeholder="ilość jednostek"
           value={unitNumber}
-          onChange={numberUnit}
+          onChange={(e) => setUnitNumber(e.target.value)}
         />
         </label>
         <label>
@@ -101,7 +92,7 @@ const AddItem = (props) => {
           type="number"
           placeholder="cena jednostkowa netto"
           value={unitPrice}
-          onChange={priceUnit}
+          onChange={(e) => setUnitPrice(e.target.value)}
         />
         </label>
         <span>kwota: {sum} </span>

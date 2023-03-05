@@ -24,7 +24,12 @@ const App = () => {
     fetchData();
   }, []);
   
+
   const deleteItem = async (id) => {
+    const newPositions = [...positions] ;
+    const index = newPositions.findIndex(position => position.id === id);
+    positions.splice(index, 1);
+    setPositions([...positions])
     try {
       await axios.delete(`http://localhost:4000/info/${id}`);
       setPositions(positions.filter((item) => item.id !== id));
@@ -47,22 +52,25 @@ const App = () => {
       setCounter(counter + 1);
       setPositions([...positions, item]);
     } 
-    // else {
-    //   console.log("brak danych");
-    // }
   };
 
-  const handleFullCalculation = () => {
+  // const handleFullCalculation = () => {
+  //   const totalSum = positions.map((position) => position.sum * 1);
+  //   setSumTotal(totalSum.reduce((a, b) => a + b, 0));
+  // };
+
+  useEffect(() => {
     const totalSum = positions.map((position) => position.sum * 1);
     setSumTotal(totalSum.reduce((a, b) => a + b, 0));
-  };
+  }, [positions]);
+  
 
   return (
     <div>
       <Header />
       <AddItem add={addItem} />
       <ListItems items={positions} delete={deleteItem} />
-      <button onClick={handleFullCalculation}>Podlicz wszystko</button>
+      {/* <button onClick={handleFullCalculation}>Podlicz wszystko</button> */}
       <h2> kwota całościowa netto: {sumTotal.toFixed(2)} </h2>
     </div>
   );
