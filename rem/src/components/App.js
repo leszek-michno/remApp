@@ -17,6 +17,7 @@ const App = () => {
       try {
         const res = await axios(url);
         setPositions(res.data);
+        console.log(res.data);
       } catch (error) {
         console.log(error.res);
       }
@@ -54,11 +55,6 @@ const App = () => {
     } 
   };
 
-  // const handleFullCalculation = () => {
-  //   const totalSum = positions.map((position) => position.sum * 1);
-  //   setSumTotal(totalSum.reduce((a, b) => a + b, 0));
-  // };
-
   useEffect(() => {
     const totalSum = positions.map((position) => position.sum * 1);
     setSumTotal(totalSum.reduce((a, b) => a + b, 0));
@@ -70,7 +66,6 @@ const App = () => {
       <Header />
       <AddItem add={addItem} />
       <ListItems items={positions} delete={deleteItem} />
-      {/* <button onClick={handleFullCalculation}>Podlicz wszystko</button> */}
       <h2> kwota całościowa netto: {sumTotal.toFixed(2)} </h2>
     </div>
   );

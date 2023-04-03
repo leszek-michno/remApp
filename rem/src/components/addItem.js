@@ -34,6 +34,7 @@ const AddItem = (props) => {
         sum,
       });
       console.log(res.data);
+      setProduct('');
       setName("");
       setUnit("");
       setUnitNumber("");
