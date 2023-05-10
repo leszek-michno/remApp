@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { productType, packages, products } from "./arrays";
 import axios from "axios";
 
-const url = "http://localhost:4000/info";
+const url = "http://localhost:8000/info";
 
 const AddItem = (props) => {
   const [name, setName] = useState(products[0]);

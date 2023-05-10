@@ -5,7 +5,7 @@ import "./App.scss";
 import Header from "./header";
 import axios from "axios";
 
-const url = "http://localhost:4000/info";
+const url = "http://localhost:8000/info";
 
 const App = () => {
   const [sumTotal, setSumTotal] = useState(0);
@@ -32,7 +32,7 @@ const App = () => {
     positions.splice(index, 1);
     setPositions([...positions])
     try {
-      await axios.delete(`http://localhost:4000/info/${id}`);
+      await axios.delete(`http://localhost:8000/info/${id}`);
       setPositions(positions.filter((item) => item.id !== id));
     } catch (error) {
       console.log(error);
